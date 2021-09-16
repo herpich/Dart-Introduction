@@ -1,0 +1,31 @@
+void main(){
+  // Operações lógicas e relacionais 
+  double num1 = 100.0;
+  double num2 = 15.0;
+  
+  // diferente, igual, maior=, menor=
+  bool teste = (num1 != num2);
+  print("Comparação: $teste");
+  teste = (num1 == num2);
+  print("Comparação: $teste");
+  teste = (num1 >= num2);
+  print("Comparação: $teste");
+  teste = (num1 <= num2);
+  print("Comparação: $teste");
+  
+  // OR
+  teste = (false || true);
+  print("Comparação OR: $teste");
+  // AND
+  bool testeAnd = (false && true);
+  print("Comparação AND: $testeAnd");
+  // Combinando operações
+  teste = (10 > 20) && ((30 < 20) || testeAnd);
+  print("Comparação Combinação: $teste");
+  // ternário
+  bool teste2 = true;
+  print(teste2 ? 'verdadeiro' : 'falso');
+  // Not
+  bool testeNot = !true;
+  print("Teste not: $testeNot");
+}

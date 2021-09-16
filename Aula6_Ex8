@@ -1,0 +1,13 @@
+void main(){
+    // Funções
+    print(calcAreaCirculo1(5.0));
+    print(calcAreaCirculo2(6.0));
+}
+
+// função do modo como conhecemos
+double calcAreaCirculo1(double raio){
+  return 3.14 * raio * raio;
+}
+
+// função em uma linha         sinal => indica retorno
+double calcAreaCirculo2(double raio) => 3.14 * raio * raio;

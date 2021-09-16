@@ -1,0 +1,21 @@
+void main(){
+  // Operações aritméticas 
+  double num1 = 100.0;
+  double num2 = 15.0;
+  
+  double somar = num1 + num2;
+  double multiplicar = num1 * num2;
+  double dividir = num1 / num2;
+  double subtrair = num1 - num2;
+    
+  print("Somar: $somar. \nMultiplicar: $multiplicar.");
+  print("Dividir: $dividir. \nSubtrair: $subtrair.");
+  
+  somar++;
+  multiplicar++;
+  dividir--;
+  ++subtrair;
+  
+  print("Somar: $somar. \nMultiplicar: $multiplicar.");
+  print("Dividir: $dividir. \nSubtrair: $subtrair.");
+}

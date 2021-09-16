@@ -1,0 +1,35 @@
+void main(){
+    // Funções anônima & parâmetros opcionais;
+    //criarBotao1("olá", "azul", 10.3);
+    //criarBotao2("olá", cor:"azul", largura:9.3); // parametros opcionais/nomeados
+    //criarBotao2("olá", largura:9.3);
+    //criarBotao3("olá", botaoCriado, cor:"azul", largura:9.3);
+  
+    criarBotao3("inciar camera", (){ // função anonima 
+        print("botao criado por funcao anonima"); 
+    });
+    
+}
+
+void criarBotao1(String texto, String cor, double largura){
+  print(texto);
+  print(cor);
+  print(largura);
+}
+
+void criarBotao2(String texto, {String cor = "Branco", double largura = 10.3}){
+  print(texto);
+  print(cor);
+  print(largura);
+}
+
+void botaoCriado(){
+  print("Botão criado.");
+}
+
+void criarBotao3(String texto, Function cria, {String cor = "Branco", double largura = 10.3}){
+  print(texto);
+  print(cor);
+  print(largura);
+  cria();
+}

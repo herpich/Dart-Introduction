@@ -1,0 +1,41 @@
+// um modelo para o objeto
+class Pessoa{
+  // atributos do nosso objeto
+  String nome = "";
+  int idade = 0;
+  double altura = 0.0;
+  
+  // métodos - coisas que nosso objeto é capaz de fazer
+  void dormir(){
+    print("$nome está dormindo.");
+  }
+  void aniver(){
+    idade++;
+  }
+}
+
+void main(){
+  // sintaxe para criar objetos por meio da classe construída
+  // tipo nome   instancia o objeto Pessoa
+  Pessoa pessoa1 = new Pessoa(); //new opcional
+  
+  // inserir dados para pessoa1
+  pessoa1.nome = "Fabrício";
+  pessoa1.idade = 30;
+  pessoa1.altura = 1.85;
+  
+  Pessoa pessoa2 = Pessoa();
+  pessoa2.nome = "Lucas";
+  pessoa2.idade = 33;
+  pessoa2.altura = 1.70;
+  
+  print(pessoa1.nome);
+  print(pessoa1.idade);
+  
+  pessoa1.aniver();
+  print(pessoa1.idade);
+  
+  pessoa2.dormir();
+  
+  
+}

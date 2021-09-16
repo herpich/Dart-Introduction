@@ -1,0 +1,27 @@
+void main(){
+    // Funções
+    print("Seja bem-vindo(a).");
+    print("Escolha a opção.");
+  
+    printarIntroducao();
+    somar(1,2);
+    double mult = multiplicar(22,2);
+    print("Multiplicando valores: $mult");
+    print(multiplicar(3,3));
+}
+
+// o uso do void é opcional
+void printarIntroducao(){
+   print("Seja bem-vindo(a).");
+   print("Escolha a opção."); 
+}
+
+void somar(double a, double b){
+  double resultado = a + b;
+  print(resultado);
+}
+
+double multiplicar(double a, double b){
+  double resultado = a * b;
+  return resultado;
+}

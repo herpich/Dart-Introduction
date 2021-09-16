@@ -1,0 +1,49 @@
+// um modelo para o objeto
+class Pessoa{
+  // atributos do nosso objeto
+  String nome = "";
+  int _idade = 0;
+  double _altura = 0.0;
+    
+  // Declarando construtores
+  Pessoa(this.nome, this._idade, this._altura); // função utilizada para construir o objeto
+  
+  // named constructor - construtor diferenciado para quando se tem parametros diferentes
+  Pessoa.nascer(this.nome, this._altura){
+    _idade = 0;
+    print("$nome nasceu!");
+    dormir();
+  }
+  
+  // métodos - coisas que nosso objeto é capaz de fazer
+  void dormir(){
+    print("$nome está dormindo.");
+  }
+  void aniver(){
+    _idade++;
+  }
+  
+  int get idade => _idade;
+  double get altura => _altura;
+  /*double get altura {
+    return _altura;
+  }*/
+  
+  set altura(double altura){
+    if(altura > 0.0 && altura < 2.50){
+      _altura = altura;
+    }
+  }
+  
+  set idade(int idade) => _idade = idade;
+}
+
+void main(){  
+  //            instancia para construtor nomeado
+  Pessoa nene = Pessoa.nascer("Enzo",0.30);
+  //nene.idade= 18;
+  nene.altura = 0.40;
+  nene.idade = 1;
+  print(nene.altura);
+  print(nene.idade);
+}

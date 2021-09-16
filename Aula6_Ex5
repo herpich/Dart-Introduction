@@ -1,0 +1,14 @@
+void main(){
+  String linguagem = "Dart";
+  
+  switch(linguagem){
+    case "Dart":
+      print("DART");
+      break;
+    case "Typescript":
+      print("TYPESCRIPT");
+      break;
+    default:
+      print("Outra linguagem");
+  }
+}

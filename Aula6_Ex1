@@ -1,0 +1,23 @@
+void main(){
+  // Declaração e operação com variáveis
+  String nome = "Fabrício Herpich";
+  int idade   = 30;
+  double altura = 1.85;
+  bool teste = true;
+  
+  // Impressão de dados
+  print("O $nome tem $idade anos e $altura metros.");
+  print(nome);
+  
+  // Variável com tipo de dado indefinido
+  var teste1 = 123;
+  print("-> $teste1");
+  
+  // Variáveis com tipo de dados dinâmicos
+  dynamic teste2 = 123;
+  print("-> $teste2");
+  teste2 = 10.5;
+  print("-> $teste2");
+  teste2 = "Oi, cara.";
+  print("-> $teste2");
+}
